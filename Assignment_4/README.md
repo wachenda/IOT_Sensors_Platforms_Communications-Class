@@ -1,4 +1,4 @@
-# NOTES for Assignment 4
+# NOTES for Assignment 4:
 
 ## Overview:
 
