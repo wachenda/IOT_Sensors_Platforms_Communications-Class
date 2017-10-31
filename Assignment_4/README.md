@@ -8,3 +8,5 @@ For this assignment, you will be using a programming language (Python) to dynami
 
 * **assignment4-DW.py** should be placed in /usr/lib/cgi-bin/
 * **styles.css** should be placed in /var/www/html
+
+To run, enter **http://<IP Address of Raspberry Pi>/cgi-bin/assignment4-DW.py**
