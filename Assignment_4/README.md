@@ -10,3 +10,6 @@ For this assignment, you will be using a programming language (Python) to dynami
 * **styles.css** should be placed in /var/www/html
 
 To run, enter **http://\<IP Address of Raspberry Pi\>/cgi-bin/assignment4-DW.py**
+
+
+![](Images/RGB-LED-Schematic.png?raw=true)
