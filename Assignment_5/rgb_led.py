@@ -3,9 +3,10 @@
 import argparse
 import pigpio
 
+# Raspberry Pi GPIO pins to connect to
 R = 4
-G = 22
-B = 18
+G = 17
+B = 22
 
 
 parser = argparse.ArgumentParser()
@@ -17,11 +18,11 @@ parser.add_argument("Blue", help="Blue Value:  0 <= value <= 255",
                     type=int)
 args = parser.parse_args()
 
-print(args)
+# print(args)
 
-print(args.Red)
-print(args.Green)
-print(args.Blue)
+# print(args.Red)
+# print(args.Green)
+# print(args.Blue)
 
 p = pigpio.pi()
 
