@@ -17,7 +17,7 @@ The current capabilities of the GPIO pins on the Pi are not very high. Therefore
 usage: rgb_led.py [-h] Red Green Blue
 
 
-**$ sudo ./rgb_neo.py **
+**$ sudo ./rgb_neo.py**
 usage: rgb_neo.py [-h] Red Green Blue
 
 ## Details
@@ -28,7 +28,7 @@ An alternative is to use GPIO DMA to send a PWM signal to any of the GPIO pins. 
 
 [Python Interface for pigpio library](http://abyz.me.uk/rpi/pigpio/python.html)
 
-Controlling the NeoPixel strip is even more tricky than controlling the RGB with PWM signals.  The control signal requires 5-V logic patterns with sub-uSec timing requirements.  In the USER mode of the Raspberry Pi running in Linux, this can be quite a challenge to deliver and would be almost impossible to bit-bang.  In this case, someone has written a C library that takes advantage of either one of the PWM peripherals on the Pi MCU or the SPI peripheral.  Additionally, DMA is used to vary the bit patterns into these peripherals in order to provide their control signals. This library was written by Jeremy Garff and is available at;
+Controlling the NeoPixel strip is even more tricky than controlling the RGB with PWM signals.  The control signal requires 5-V logic patterns with sub-uSec timing requirements.  In the USER mode of the Raspberry Pi running in Linux, this can be quite a challenge to deliver and would be almost impossible to bit-bang.  In this case, someone has written a C library that takes advantage of either one of the PWM peripherals on the Pi MCU or the SPI peripheral.  Additionally, DMA is used to vary the bit patterns into these peripherals in order to provide their control signals. This library was written by Jeremy Garff and is available at:
 
 [rpi_ws281x libary](https://github.com/jgarff/rpi_ws281x)
 
