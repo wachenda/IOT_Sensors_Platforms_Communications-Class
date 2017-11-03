@@ -9,7 +9,7 @@ For this assignment, I decided to "amp" it up and demonstrate controlling an RGB
 
 Also, I wrote a program to control a strip of NeoPixel (WS2812) LED's.  The program to do this is **rgb_neo.py**
 
-The current capabilities of the GPIO pins on the Pi are not very high. Therefore, I utilized N-channel MOSFETS to interface to the RGB LED as well as the NeoPixel.  The schematics for wiring these configurations is shown below.
+The current capabilities of the GPIO pins on the Pi are not very high. Therefore, I utilized N-channel MOSFET's ( ZVN4206A, [Link to DigiKey Part](http://www.digikey.com/scripts/DkSearch/dksus.dll?Detail&itemSeq=242845089&uq=636452527748061276) ) to interface to the RGB LED as well as the NeoPixel.  The schematics for wiring these configurations is shown below.
 
 ## Usage:
 
