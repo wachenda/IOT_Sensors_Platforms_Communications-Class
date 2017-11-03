@@ -17,10 +17,14 @@ The current capabilities of the GPIO pins on the Pi are not very high. Therefore
 
 usage: rgb_led.py [-h] Red Green Blue
 
+where Red, Green and Blue are integer values from 0 to 255
+
 
 **$ sudo ./rgb_neo.py**
 
 usage: rgb_neo.py [-h] Red Green Blue
+
+where Red, Green and Blue are integer values from 0 to 255
 
 ## Details
 
