@@ -2,7 +2,7 @@
 
 ## Overview:
 
-Write a program to control LED an LED through a GPIO on the Pi.
+Write a program to control an LED through a GPIO on the Pi.
 
 
 For this assignment, I decided to "amp" it up and demonstrate controlling an RGB LED using GPIO DMA hardware generated PWM signals.  The program to do this is **rgb_led.py**
