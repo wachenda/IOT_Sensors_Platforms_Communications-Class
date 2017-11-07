@@ -7,4 +7,6 @@
 |       2      |            Python Code To Create HTML Page           |
 |       3      |             Web Server Setup & Test Page             |
 |       4      |            Dynamic Web Page for Web Server           |
+|       5      |                GPIO Control Of LED's                 |
+|       6      |                 CGI Control of LED's                 |
 
