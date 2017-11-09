@@ -26,6 +26,10 @@ usage: rgb_neo.py [-h] Red Green Blue
 
 where Red, Green and Blue are integer values from 0 to 255
 
+## rgb_neo.py Demo Video 
+
+[![Watch the Assignment 6 Demo Video](https://i.ytimg.com/vi/FF8w3yTZ-AU/2.jpg?time=1510264309897)](https://youtu.be/FF8w3yTZ-AU)
+
 ## Details
 
 For controlling the RGB LED, we would like to provide a PWM input to each of the 3 LED's in the module.  However, the broadcom MCU on the Raspberry Pi only provides 2 hardware PWM outputs.  One could do bit-banging to simulate a PWM signal but this is very inefficient and will eat up CPU time.
