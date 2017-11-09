@@ -5,9 +5,9 @@
 Write a CGI program to control an LED through a GPIO on the Pi.
 
 
-## Example of CGI website:
+## Example of website:
 
-![](Images/Screen Shot of HTML Page for Assignment.png?raw=true)
+![](Images/Demo_website_screenshot.png?raw=true)
 
 ## CGI RGB LED Control Demo Video 
 
