@@ -1,4 +1,4 @@
-# IOT Sensors, Platforms, Communications and Applications Class
+# IoT Sensors, Platforms, Communications and Applications Class
 ## UCSC Extension, Fall Quarter 2017
 
 |  Assignment  |                         Topic                        |
