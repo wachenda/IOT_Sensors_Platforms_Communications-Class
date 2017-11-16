@@ -6,9 +6,9 @@ Write a program to control an I2C 16x2 LCD character display using  the Pi.  Hav
 
 ## Details:
 
-I used the AdaFruit 16x2 LCD+Keypad Kit for Raspberry Pi that has an I2C interface on it for this assignment.
-( ZVN4206A, [Link to AdaFruit 16x2 LCD](https://www.adafruit.com/product/1115) )
+I used the [AdaFruit 16x2 LCD+Keypad Kit for Raspberry Pi](https://www.adafruit.com/product/1115) that has an I2C interface on it for this assignment.
 
+## Output from Program
 
 ![](Images/IMG_2140.jpg?raw=true)
 
