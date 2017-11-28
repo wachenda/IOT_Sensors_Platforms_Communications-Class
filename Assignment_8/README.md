@@ -4,9 +4,10 @@
 
 Create RESTful Service using a BME280 sensor as well as the RGB_LED from Assignment 6
 
-## Example of website:
+## Demonstration of RESTful API:
 
-##~ $ curl -i http:/10.0.1.52:8080/api 
+## ~ $ curl -i http:/10.0.1.52:8080/api 
+
 HTTP/1.0 200 OK
 Content-Type: application/json
 Content-Length: 203
@@ -28,7 +29,8 @@ Date: Tue, 28 Nov 2017 17:16:04 GMT
 }
 
 
-##~ $ curl -i http:/10.0.1.52:8080/api/sensors
+## ~ $ curl -i http:/10.0.1.52:8080/api/sensors
+
 HTTP/1.0 200 OK
 Content-Type: application/json
 Content-Length: 123
