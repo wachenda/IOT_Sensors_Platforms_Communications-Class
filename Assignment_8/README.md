@@ -6,23 +6,55 @@ Create RESTful Service using a BME280 sensor as well as the RGB_LED from Assignm
 
 ## Example of website:
 
-
-: ~$curl -i http:/10.0.1.52:8080/api 
+##~ $ curl -i http:/10.0.1.52:8080/api 
 HTTP/1.0 200 OK
-
-Content-Type: application/json Content-Length: 204
-
-Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
+Content-Type: application/json
+Content-Length: 203
+Server: Werkzeug/0.11.15 Python/3.5.3
+Date: Tue, 28 Nov 2017 17:16:04 GMT
 
 {
+      "led": {
+          "B": 0, 
+          "G": 0, 
+          "R": 0
+       }, 
+       "sensors": {
+          "eventtime": "2017-11-28T17:16:04.404934Z", 
+          "humidity": 52.88, 
+          "pressure": 1011.674, 
+          "temperature": 66.073
+       }
+}
 
+
+##~ $ curl -i http:/10.0.1.52:8080/api/sensors
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 123
+Server: Werkzeug/0.11.15 Python/3.5.3
+Date: Tue, 28 Nov 2017 17:17:51 GMT
+
+{
+      "eventtime": "2017-11-28T17:17:51.293908Z", 
+      "humidity": 53.266, 
+      "pressure": 1011.691, 
+      "temperature": 66.033
+}
+
+
+
+
+
+ ~$ curl -i http:/10.0.1.52:8080/api 
+HTTP/1.0 200 OK
+Content-Type: application/json Content-Length: 204
+Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
+{
     "led": {
-
-            "B": 0,
-
-                "G": 0,
-
-                    "R": 0
+        "B": 0,
+        "G": 0,
+        "R": 0
 
     }, "sensors": {
 
@@ -32,9 +64,9 @@ Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
 
         "temperature": 70.445
 
-    } }
+} }
 
-    : ~$curl -i http:/10.0.1.52:8080/api/sensors HTTP/1.0 200 OK
+    ~$ curl -i http:/10.0.1.52:8080/api/sensors HTTP/1.0 200 OK
     Content-Type: application/json Content-Length: 123
     Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:44 GMT
     {
@@ -42,7 +74,7 @@ Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
         "pressure": 1009.593,
         "temperature": 70.429
     }
-    : ~$curl -i http:/10.0.1.52:8080/api/sensors/temperature HTTP/1.0 200 OK
+    ~$ curl -i http:/10.0.1.52:8080/api/sensors/temperature HTTP/1.0 200 OK
     Content-Type: application/json
     Content-Length: 28
     Server: Werkzeug/0.11.15 Python/3.5.3
@@ -50,7 +82,7 @@ Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
     {
         "temperature": 70.437
     }
-    : ~$curl -i http:/10.0.1.52:8080/api/sensors/pressure HTTP/1.0 200 OK
+  ~$ curl -i http:/10.0.1.52:8080/api/sensors/pressure HTTP/1.0 200 OK
     Content-Type: application/json
     Content-Length: 27
     Server: Werkzeug/0.11.15 Python/3.5.3
