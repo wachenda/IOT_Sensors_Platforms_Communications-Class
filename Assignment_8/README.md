@@ -7,19 +7,33 @@ Create RESTful Service using a BME280 sensor as well as the RGB_LED from Assignm
 ## Example of website:
 
 
-: ~$curl -i http:/10.0.1.52:8080/api HTTP/1.0 200 OK
+: ~$curl -i http:/10.0.1.52:8080/api 
+HTTP/1.0 200 OK
+
 Content-Type: application/json Content-Length: 204
+
 Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:35 GMT
+
 {
+
     "led": {
+
             "B": 0,
+
                 "G": 0,
+
                     "R": 0
+
     }, "sensors": {
+
         "eventtime": "2017-11-23T02:49:35.333311Z", "humidity": 60.011,
+
         "pressure": 1009.584,
+
         "temperature": 70.445
+
     } }
+
     : ~$curl -i http:/10.0.1.52:8080/api/sensors HTTP/1.0 200 OK
     Content-Type: application/json Content-Length: 123
     Server: Werkzeug/0.11.15 Python/3.5.3 Date: Thu, 23 Nov 2017 02:49:44 GMT
