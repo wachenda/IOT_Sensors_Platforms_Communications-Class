@@ -9,4 +9,7 @@
 |       4      |            Dynamic Web Page for Web Server           |
 |       5      |                GPIO Control Of LED's                 |
 |       6      |                 CGI Control of LED's                 |
+|       7      |                   16x2 LED Display                   |
+|       8      |                  Flask RESTful API                   |
+|       9      |                PubNub Demonstration                  |
 
