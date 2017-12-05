@@ -7,7 +7,7 @@ Demonstrate using PubNub to publish and subscribe to data from a BME280 sensor o
 
 ## Usage:
 
-[![Watch the Assignment 9 Demo Video](https://www.youtube.com/upload_thumbnail?v=z-i04m6NMOg&t=2&ts=1512499066874)](https://youtu.be/z-i04m6NMOg)
+[![Watch the Assignment 9 Demo Video](https://i.ytimg.com/vi/z-i04m6NMOg/2.jpg?time=1512499587705)](https://youtu.be/z-i04m6NMOg)
 
 ## Details
 
