@@ -12,4 +12,6 @@
 |       7      |                   16x2 LED Display                   |
 |       8      |                  Flask RESTful API                   |
 |       9      |                PubNub Demonstration                  |
+|      10      |    Encrypting & Decrypting Data Going to mongoDB     |
+|Final Project |                Home Monitoring System                |
 
