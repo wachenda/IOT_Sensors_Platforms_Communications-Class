@@ -1,0 +1,47 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+{{super()}}
+    
+{% endblock %}
+
+
+{% block content %}
+  
+    <div class="container">
+        <h2>Current Conditions</h2>
+        <p>As of {{currenttime}}:</p>            
+        <table class="table table-striped">
+            <thead>
+            <tr class="no-border">
+                <th>Location</th>
+                <th class="text-center">Temperature<br>&deg;F</th>
+                <th class="text-center">Humidity<br>% RH</th>
+                <th class="text-center">Pressure<br>hPa</th>
+                <th class="text-center">Voltage<br>V</th>
+                <th class="text-center">Last Updated</th>
+            </tr>
+            <!-- <tr class="no-border">
+                <th></th>
+                <th class="text-center">&deg;F</th>
+                <th class="text-center">% RH</th>
+                <th class="text-center">hPa</th>
+                <th class="text-center">V</th>
+            </tr> -->
+            </thead>
+            <tbody>
+            {% for device in devices %}
+            <tr>
+                <td><a href="{{ url_for('plot', name=device.Name, loc=device.Location) }}">{{device.Location}}</a></td>
+                <td class="text-center">{{device.Temperature}}</td>
+                <td class="text-center">{{device.Humidity}}</td>
+                <td class="text-center">{{device.Pressure}}</td>
+                <td class="text-center">{{device.Voltage}}</td>
+                <td class="text-center">{{device.Event_Time}}</td>
+            </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

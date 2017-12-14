@@ -1,0 +1,54 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<style>.ct-label {
+    font-size: 12px;
+}</style>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+<script>
+
+
+new Chartist.Line('#Temp', {
+    // labels: [1, 2, 3, 4],
+    // series: [[100, 120, 180, 200]]
+    series: [{{t_data}}]},
+    {axisY: { onlyInteger: true }}
+    );
+
+new Chartist.Line('#Hum', {
+    // labels: [1, 2, 3, 4],
+    series: [ {{h_data}} ]},
+    {axisY: { onlyInteger: true }}    
+);
+
+new Chartist.Line('#Press', {
+    // labels: [1, 2, 3, 4],
+    series: [ {{p_data}} ]},
+    {axisY: { onlyInteger: true }}  
+);
+   
+</script>
+{% endblock %}
+
+{% block content %}
+  
+    <div class="container">
+        <h1>{{location}} Conditions</h1>
+        <p>over the past 24 hours as of {{currenttime}}:</p>
+        <h2 style="text-align: center">Temperature &deg;F</h2>
+        <div class="ct-chart ct-golden-section" id="Temp"></div>
+        <h2 style="text-align:center">Humidity %RH</h2>
+        <div class="ct-chart ct-golden-section" id="Hum"></div> 
+        <h2 style="text-align:center">Pressure hPa</h2>
+        <div class="ct-chart ct-golden-section" id="Press"></div>        
+    
+    </div>
+{% endblock %}
